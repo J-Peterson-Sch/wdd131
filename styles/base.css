@@ -74,6 +74,11 @@ a {
   text-decoration: none;
 }
 
+figcaption {
+    color: gray;
+    font-size: small;
+}
+
 .left-card {
   /* background: rgb(255, 0, 0); */
   grid-column: 1 / 2;
