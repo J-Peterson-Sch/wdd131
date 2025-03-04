@@ -45,6 +45,11 @@ p {
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .right-sidebar {
   background: rgb(247, 247, 247);
   grid-column: 2 / 3;
