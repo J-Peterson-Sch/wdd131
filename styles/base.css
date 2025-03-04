@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template: auto 1fr auto / auto;
+  height: 100vh;
+  margin: 0;
+  font-family: "Revalia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  background: rgb(75, 75, 75);
+  grid-column: 1 / 3;
+}
+
+nav {
+  background: rgb(41, 43, 40);
+  color: white;
+  display: flex;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    color: red;
+}
+
+nav div {
+  flex-grow: 1;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+main {
+  display: grid;
+  grid-template: auto / 70vw auto;
+  grid-column: 1 / 3;
+}
+
+section {
+  height: auto;
+}
+
+footer {
+  background: rgb(42, 42, 42);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 3;
+}
+
+h1 {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 strong {
+    color: yellow;
+}
+
+footer p {
+  padding-left: 1.2rem;
+  padding-bottom: 0.8rem;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.left-card {
+  /* background: rgb(255, 0, 0); */
+  grid-column: 1 / 2;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.left-card img {
+    max-width: 200px;
+}
+
+.right-card {
+  /* background: rgb(103, 190, 21); */
+  grid-column: 2 / 3;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.card img {
+    display: inline;
+}
+
+.card p {
+    display: inline;
+    padding: 1rem;
+}
+
+.card-header {
+  background-color: rgb(124, 124, 128);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-header h3 {
+  /* text-align: center; */
+  color: white;
+}
+
+.card-contents {
+  padding: 1rem;
+}
+
+.left-card .card-contents {
+    display: grid;
+    grid-template: auto auto / 70% auto;
+}
+
+.card-contents a {
+    color: black;
+    text-decoration: underline;
+}
+
+.card-contents h3 {
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+}
+
+.card-contents ul {
+    padding-left: 1.2rem;
+}
+
+#about-me {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+#p-boise {
+    display: inline;
+}
+
+#img-boise {
+    padding-top: 2rem;
+    display: inline;
+}
