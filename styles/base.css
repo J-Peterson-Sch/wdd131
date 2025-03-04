@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template: auto 1fr auto / auto;
-  height: 100vh;
+  height: auto;
   margin: 0;
   font-family: "Revalia", sans-serif;
   font-weight: 400;
@@ -160,4 +160,8 @@ a {
 #img-boise {
     padding-top: 2rem;
     display: inline;
+}
+
+#lastModified {
+    color: yellow;
 }
