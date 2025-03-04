@@ -75,7 +75,7 @@ a {
 }
 
 figcaption {
-    color: gray;
+    color: rgb(51, 51, 51);
     font-size: small;
 }
 
@@ -84,10 +84,6 @@ figcaption {
   grid-column: 1 / 2;
   margin-left: 1rem;
   margin-right: 0.5rem;
-}
-
-.left-card img {
-    max-width: 200px;
 }
 
 .right-card {
@@ -107,7 +103,8 @@ figcaption {
 }
 
 .card img {
-    display: inline;
+    max-width: 200px;
+
 }
 
 .card p {
@@ -158,13 +155,8 @@ figcaption {
     grid-column: 1 / 2;
 }
 
-#p-boise {
-    display: inline;
-}
-
 #img-boise {
     padding-top: 2rem;
-    display: inline;
 }
 
 #lastModified {
