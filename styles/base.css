@@ -136,7 +136,13 @@ figcaption {
 
 .card-contents a {
     color: black;
-    text-decoration: underline;
+    display: block;
+    padding-left: 1.2rem;
+    line-height: 3rem;
+}
+
+.card-contents a:hover {
+  color: rgb(0, 58, 233);
 }
 
 .card-contents h3 {
