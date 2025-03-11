@@ -1,0 +1,26 @@
+@media (min-width: 700px){
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    header p {
+        font-size: 2rem;
+    }
+
+	.navigation {
+		display: flex;
+		justify-content: flex-end !important;
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    #menu {
+        display: none;
+    }
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+header {
+	background-color: rgb(75, 75, 75);
+	display: grid;
+    align-items: stretch;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+    height: auto;
+}
+
+.open header {
+    height: auto;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: #fff;
+    font-size: 2rem;
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+/* nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+} */
+
+/* nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+    display: none;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+} */
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+    font-size: 1.2rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+.active {
+	color: yellow;
+}
