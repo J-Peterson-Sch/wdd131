@@ -33,7 +33,10 @@ header p {
 }
 
 img {
-    max-width: 300px;
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio while resizing */
+    display: block; /* Removes inline white space below images */
+    margin: 0 auto; /* Centers the image in its container */
 }
 
 figure {
@@ -78,10 +81,12 @@ figure {
 .photogrid {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0 1rem;
 }
 
 .photogrid figure {
     align-content: center;
+    width: 100%;
 }
 
 #menu {
