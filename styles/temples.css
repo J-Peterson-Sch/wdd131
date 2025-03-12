@@ -26,20 +26,15 @@ header {
     height: auto;
 }
 
-h1,
-h2 {
-    text-align: center;
-    margin: 1rem 1rem 1.5rem 1rem;
-}
-
-h2 {
-    margin-bottom: 4rem;
-}
-
-header p {
+h1 {
     font-size: 2rem;
     color: #fff;
     margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem auto 4rem auto;
 }
 
 img {
