@@ -1,31 +1,21 @@
 @media (min-width: 700px){
 	header {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
 	}
 
-    header p {
-        font-size: 2rem;
-    }
-
 	figure {
-		text-align: center;
-		padding-bottom: 1.2rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 
 	.navigation {
-		display: flex;
-		justify-content: flex-end !important;
+		justify-content: flex-end;
 		flex-direction: row;
 	}
 
 	.photogrid {
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		margin: 0 1rem;
 	}
 
 	.navigation a {
