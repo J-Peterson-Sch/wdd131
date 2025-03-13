@@ -6,6 +6,10 @@
         position: relative;
     }
 
+    h1 {
+        font-size: 4rem;
+    }
+
     .card {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 8px;
