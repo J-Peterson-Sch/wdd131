@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Exercise</title>
+    <meta name="description" content="Learning to use responsive image sizes">
+    <meta name="author" content="Jordan Peterson">
+    <link rel="stylesheet" href="styles/responsive-image.css">
+    <script src=""></script>
+  </head>
+  <body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/copenhagen-denmark-temple-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/copenhagen-denmark-temple-medium.webp" media="(min-width: 500px)">
+                <img src="images/copenhagen-denmark-temple-small.webp" alt="Copenhagen Denmark Temple" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+
+  </body>
+</html>
