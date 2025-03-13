@@ -24,15 +24,29 @@
         margin-bottom: 1.5rem;
     }
 
+    .svg-icon {
+        display: none;
+    }
+
+    .svg-icon::after {
+        content: "🌞";
+    }
+
     #data {
         position: absolute;
         top: 1rem;
         left: 1rem;
     }
     
-    #weather {
+    #weather-card {
         position: absolute;
         bottom: 1rem;
         right: 1rem;
+    }
+
+    #weather-heading::after {
+        content: "🌞";
+        font-size: 4rem;
+        display: block;
     }
 }
