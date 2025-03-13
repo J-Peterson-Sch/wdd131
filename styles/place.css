@@ -11,7 +11,8 @@ body {
 
 h1 {
     text-align: center;
-    background-color: gray;
+    background-color: rgb(200 16 46);
+    color: #fff;
     padding: 3rem;
 }
 
@@ -29,9 +30,14 @@ footer p {
     color: white;
 }
 
+picture {
+    height: auto;
+}
+
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .card {

@@ -7,57 +7,61 @@
     <meta name="description" content="Gives some information about Denmark including the current weather">
     <meta name="author" content="Jordan Peterson">
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header>
-        <h1>Copenhagen, Denmark</h1>
+        <h1>Denmark</h1>
     </header>
-    <div class="hero">
-        <picture>
-            <source srcset="images/Nyhavn-Kbenhavn-Denmark-large.webp" media="(min-width: 500px)">
-            <img src="images/Nyhavn-Kbenhavn-Denmark-mobile.webp" alt="Copenhagen Denmark" width="500" height="250">
-        </picture>
-    </div>
-    <div class="card">
-        <div class="card-header">
-            <h2>Data</h2>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Nyhavn-Kbenhavn-Denmark-large.webp" media="(min-width: 500px)">
+                <img src="images/Nyhavn-Kbenhavn-Denmark-mobile.webp" alt="Copenhagen Denmark" width="500" height="250">
+            </picture>
         </div>
-        <div class="card-content">
-            <p class="label">Area:</p>
-            <p class="info">43,094 km2 </p>
-            <p class="label">Population:</p>
-            <p class="info">5,982,117</p>
-            <p class="label">Capital:</p>
-            <p class="info">Copenhagen</p>
-            <p class="label">Languages:</p>
-            <p class="info">Danish</p>
-            <p class="label">Currency:</p>
-            <p class="info">Danish krone</p>
-            <p class="label">Time Zone:</p>
-            <p class="info">UTC+01:00</p>
-            <p class="label">Calling Code:</p>
-            <p class="info">+45</p>
-            <p class="label">Internet TLD:</p>
-            <p class="info">.dk</p>
+        <div id="data" class="card">
+            <div class="card-header">
+                <h2>Data</h2>
+            </div>
+            <div class="card-content">
+                <p class="label">Area:</p>
+                <p class="info">43,094 km2 </p>
+                <p class="label">Population:</p>
+                <p class="info">5,982,117</p>
+                <p class="label">Capital:</p>
+                <p class="info">Copenhagen</p>
+                <p class="label">Languages:</p>
+                <p class="info">Danish</p>
+                <p class="label">Currency:</p>
+                <p class="info">Danish krone</p>
+                <p class="label">Time Zone:</p>
+                <p class="info">UTC+01:00</p>
+                <p class="label">Calling Code:</p>
+                <p class="info">+45</p>
+                <p class="label">Internet TLD:</p>
+                <p class="info">.dk</p>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-header">
-            <h2>Weather</h2>
-            <img src="images/weather-icon.svg" alt="weather icon" height="80px">
+        <div id="weather" class="card">
+            <div class="card-header">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather icon" height="80px">
+            </div>
+            <div class="card-content">
+                <p class="label">Temperature:</p>
+                <p class="info">10 C</p>
+                <p class="label">Conditions:</p>
+                <p class="info">Partly Cloudy</p>
+                <p class="label">Wind:</p>
+                <p class="info">5 km/h</p>
+                <p class="label">Wind Chill:</p>
+                <p id="wind-chill" class="info">-</p>
+            </div>
         </div>
-        <div class="card-content">
-            <p class="label">Temperature:</p>
-            <p class="info">10 C</p>
-            <p class="label">Conditions:</p>
-            <p class="info">Partly Cloudy</p>
-            <p class="label">Wind:</p>
-            <p class="info">5 km/h</p>
-            <p class="label">Wind Chill:</p>
-            <p id="wind-chill" class="info">-</p>
-    </div>
+    </main>
     <footer>
         <p id="currentyear">&copy;<span> Jordan Peterson USA</span></p>
         <p id="lastModified">placeholder</p>
