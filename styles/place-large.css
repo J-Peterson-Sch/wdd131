@@ -1,0 +1,30 @@
+@media (min-width: 700px){
+    .card {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+    }
+
+    .card-header {
+        background-color: #2f7043;
+        color: white;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content p {
+        margin: 8px 0;
+    }
+
+      .card-content strong {
+        font-weight: bold;
+    }
+    
+}

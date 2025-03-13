@@ -7,7 +7,8 @@
     <meta name="description" content="Gives some information about Denmark including the current weather">
     <meta name="author" content="Jordan Peterson">
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js"></script>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header>
@@ -19,28 +20,35 @@
             <img src="images/Nyhavn-Kbenhavn-Denmark-mobile.webp" alt="Copenhagen Denmark" width="500" height="250">
         </picture>
     </div>
-    <div class="data">
-        <h2>Data</h2>
-        <p class="label">Area:</p>
-        <p class="info">43,094 km2 </p>
-        <p class="label">Population:</p>
-        <p class="info">5,982,117</p>
-        <p class="label">Capital:</p>
-        <p class="info">Copenhagen</p>
-        <p class="label">Languages:</p>
-        <p class="info">Danish</p>
-        <p class="label">Currency:</p>
-        <p class="info">Danish krone</p>
-        <p class="label">Time Zone:</p>
-        <p class="info">UTC+01:00</p>
-        <p class="label">Calling Code:</p>
-        <p class="info">+45</p>
-        <p class="label">Internet TLD:</p>
-        <p class="info">.dk</p>
+    <div class="card">
+        <div class="card-header">
+            <h2>Data</h2>
+        </div>
+        <div class="card-content">
+            <p class="label">Area:</p>
+            <p class="info">43,094 km2 </p>
+            <p class="label">Population:</p>
+            <p class="info">5,982,117</p>
+            <p class="label">Capital:</p>
+            <p class="info">Copenhagen</p>
+            <p class="label">Languages:</p>
+            <p class="info">Danish</p>
+            <p class="label">Currency:</p>
+            <p class="info">Danish krone</p>
+            <p class="label">Time Zone:</p>
+            <p class="info">UTC+01:00</p>
+            <p class="label">Calling Code:</p>
+            <p class="info">+45</p>
+            <p class="label">Internet TLD:</p>
+            <p class="info">.dk</p>
+        </div>
     </div>
-    <div class="data">
-        <div class="data">
-            <h2 id="weather">weather</h2>
+    <div class="card">
+        <div class="card-header">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather icon" height="80px">
+        </div>
+        <div class="card-content">
             <p class="label">Temperature:</p>
             <p class="info">10 C</p>
             <p class="label">Conditions:</p>
