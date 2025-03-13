@@ -1,3 +1,5 @@
+@import url('places.css');
+
 @media (min-width: 700px){
 
     main {
@@ -13,8 +15,8 @@
     }
 
     .card-header {
-        background-color: #2f7043;
-        color: white;
+        background-color: var(--heading-color);
+        color: var(--heading-text-color);
         padding: 10px;
         font-size: 24px;
         font-weight: bold;
