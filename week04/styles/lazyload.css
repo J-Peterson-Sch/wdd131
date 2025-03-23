@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 450px;
+    margin: 20px auto;
+    display:block;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 650px;
+    margin: 20px auto;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    background: black;
+}
+
+.black-overlay {
+    background-color: black;
+    height: 650px;
+    width: 400px;
+    display: block;
+    /* position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 10; */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
