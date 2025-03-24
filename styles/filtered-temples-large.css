@@ -1,0 +1,29 @@
+@media (min-width: 700px){
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	figure {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.navigation {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+
+	.photogrid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    #menu {
+        display: none;
+    }
+}
