@@ -1,29 +1,55 @@
+
 @media (min-width: 700px){
 	header {
 		display: flex;
 		justify-content: space-between;
 	}
-
+	
+	p {
+		margin: .5rem;
+		font-size: .7rem;
+	}
+	
 	figure {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
-
+	
+	figcaption {
+		font-size: 1.2rem;
+	}
+	
 	.navigation {
 		justify-content: flex-end;
 		flex-direction: row;
 	}
-
+	
 	.photogrid {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
-
+	
+	.photogrid > * {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	
 	.navigation a {
 		display: block;
 		flex: 1 1 100%;
 	}
-
+	
     #menu {
-        display: none;
+		display: none;
     }
+}
+
+@media (min-width: 840px){
+	p {
+		margin: .5rem;
+		font-size: .9rem;
+	}
+
+	figcaption {
+		font-size: 1.5rem;
+	}
 }

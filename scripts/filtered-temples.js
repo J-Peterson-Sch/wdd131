@@ -1,6 +1,11 @@
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 const header = document.querySelector("header");
+const unfilterTemples = document.getElementById("home");
+const filterOldTemples = document.getElementById("old");
+const filterNewTemples = document.getElementById("new");
+const filterLargeTemples = document.getElementById("large");
+const filterSmallTemples = document.getElementById("small");
 
 
 //Event listener to toggle the open class when you click the button
@@ -10,6 +15,59 @@ hamButton.classList.toggle("open");
 header.classList.toggle("open");
 });
 
+let filterdTempleList = [];
+
+function clearForFiltering() {
+    filterdTempleList = [];
+    document.querySelector(".photogrid").innerHTML = "";
+}
+
+unfilterTemples.addEventListener("click", function(){
+    clearForFiltering();
+    temples.forEach(createTempleCards);
+});
+
+filterOldTemples.addEventListener("click", function(){
+    clearForFiltering();
+    temples.forEach(temple => {
+        let year = parseInt(temple.dedicated.substring(0, 4));
+        if (year < 1900) {
+            filterdTempleList.push(temple);
+        }
+    });
+    filterdTempleList.forEach(createTempleCards);
+});
+
+filterNewTemples.addEventListener("click", function(){
+    clearForFiltering();
+    temples.forEach(temple => {
+        let year = parseInt(temple.dedicated.substring(0, 4));
+        if (year > 2000) {
+            filterdTempleList.push(temple);
+        }
+    });
+    filterdTempleList.forEach(createTempleCards);
+});
+
+filterLargeTemples.addEventListener("click", function(){
+    clearForFiltering();
+    temples.forEach(temple => {
+        if (temple.area > 90000) {
+            filterdTempleList.push(temple);
+        }
+    });
+    filterdTempleList.forEach(createTempleCards);
+});
+
+filterSmallTemples.addEventListener("click", function(){
+    clearForFiltering();
+    temples.forEach(temple => {
+        if (temple.area < 10000) {
+            filterdTempleList.push(temple);
+        }
+    });
+    filterdTempleList.forEach(createTempleCards);
+});
 
 const temples = [
     {
@@ -98,49 +156,50 @@ const temples = [
 
   // Function to generate and append HTML to .photogrid
 function addTempleFigure(templeName, location, dedicationDate, area, imageUrl) {
-    // Create new figure element
+    
     const figure = document.createElement('figure');
 
-    // Create figcaption and set text content
     const figcaption = document.createElement('figcaption');
     figcaption.textContent = templeName;
 
-    // Create paragraph for location and set text content
-    const locationPara = document.createElement('p');
-    locationPara.textContent = `Location: ${location}}`;
+    const dataContainer = document.createElement('div');
+    dataContainer.className = 'temple-data';
 
-    // Create paragraph for dedication and set text content
-    const dedicationPara = document.createElement('p');
-    dedicationPara.textContent = `Dedicated: ${dedicationDate}`;
+    const locationData = document.createElement('p');
+    locationData.textContent = `Location: ${location}}`;
+    
+    const dedicationData = document.createElement('p');
+    dedicationData.textContent = `Dedicated: ${dedicationDate}`;
+    
+    const sizeData = document.createElement('p');
+    sizeData.textContent = `Size: ${area} sqr feet`;
 
-    // Create paragraph for size and set text content
-    const sizePara = document.createElement('p');
-    sizePara.textContent = `Size: ${area} sqr feet`;
+    const imgContainer = document.createElement('div');
+    imgContainer.className = 'temple-image';
 
-    // Create image element and set attributes
     const img = document.createElement('img');
     img.src = imageUrl;
     img.alt = templeName;
     img.loading = 'lazy';
 
-    // Append all elements to figure
-    figure.appendChild(figcaption);
-    figure.appendChild(locationPara);
-    figure.appendChild(dedicationPara);
-    figure.appendChild(sizePara);
-    figure.appendChild(img);
+    figure.appendChild(dataContainer);
+    dataContainer.appendChild(figcaption);
+    dataContainer.appendChild(locationData);
+    dataContainer.appendChild(dedicationData);
+    dataContainer.appendChild(sizeData);
+    figure.appendChild(imgContainer);
+    imgContainer.appendChild(img);
 
-    // Append figure to the photogrid div
     const photogrid = document.querySelector('.photogrid');
     if (photogrid) {
         photogrid.appendChild(figure);
     }
 }
 
-// Call the function to add the HTML
-
-temples.forEach(temple => {
+// Function to append the temple cards to the photogrid class
+const createTempleCards = temple => {
     addTempleFigure(temple.templeName, temple.location, temple.dedicated, temple.area, temple.imageUrl);
-});
+};
 
-const variable = `Welcome to the ${courseName} ${stuFirstName}!`
+temples.forEach(createTempleCards);
+
