@@ -11,6 +11,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Tinos", serif;
 }
 
 header {
@@ -65,8 +66,10 @@ fieldset legend {
     margin: 0; /* Remove default margin */
 }
 
-label, legend {
+label,
+legend {
     font-weight: bold;
+    font-size: 1rem;
 }
 
 input, select, textarea {
