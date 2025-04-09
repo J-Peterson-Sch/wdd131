@@ -1,0 +1,41 @@
+@media (min-width: 700px){
+
+    /* navbar */
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    /* ************************Hero********************** */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-shadow:
+      3px 3px 0 black,
+      -3px 3px 0 black,
+      -3px -3px 0 black,
+      3px -3px 0 black;
+    font-size: 4rem;
+}
+}

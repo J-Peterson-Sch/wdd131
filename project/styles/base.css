@@ -1,0 +1,158 @@
+:root {
+    --main-color: #eae7dc;
+    --secondary-color: #d8c3a5;
+    --tertiary-color: #8e8d8a;
+    --tertiary-color-dark: #5c5b59;
+    --pinkish-color: #e98074;
+    --redish-color: #e85a4f;
+    --redish-color-contrast: #bc433b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zain", sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--redish-color-contrast);
+  font-family: "Barrio";
+}
+
+p,
+li {
+  font-family: "Zain", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: var(--tertiary-color-dark);
+}
+
+figcaption {
+  color: var(--redish-color-contrast);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ************************responsive nav************************ */
+nav {
+	/* max-width: 1500px; */
+    min-height: 4rem;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: var(--redish-color-contrast);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "🍕";  /* just a wayfinding symbol for the user */
+}
+
+/* ************************zig-zag************************ */
+.image-text-zig-zag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-text-zig-zag p {
+    margin: 0;
+    max-width: 40%;
+    min-width: 300px;
+}
+
+.image-text-zig-zag img {
+    margin: 1rem 50px 1rem 50px;
+    max-width: 450px;
+}
+
+/* ************************Hero********************** */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    width: 100%;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+/* ************************footer************************ */
+footer {
+    background: var(--redish-color-contrast);
+    color: var(--main-color);
+    padding: 1rem;
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+  }
+
+footer p {
+    padding-left: 1.2rem;
+    /* padding-bottom: 0.6rem; */
+    color: var(--main-color);
+  }
+
+#lastModified {
+    color: var(--main-color);
+}
