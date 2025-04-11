@@ -98,9 +98,9 @@ figcaption {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
   align-items: center;
   margin: 2rem auto;
+  gap: 3rem;
 }
 
 .image-text-zig-zag p {
@@ -226,6 +226,14 @@ input[type="submit"] {
 .optional-text {
   color: darkblue;
   font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+#newsletter-sign-up-thank-you {
+  margin: 3.5rem;
 }
 
 /* ************************responsive nav************************ */
