@@ -51,31 +51,50 @@
             </p>
           </div>
 
-          <div>
-            <form id="doughForm">
-              <label for="numCrusts">Number of Crusts:</label>
-              <input type="number" id="numCrusts" name="numCrusts" min="1" value="5" required>
-              
-              <label for="diameter">Diameter of Crusts (in inches):</label>
-              <select id="diameter" name="diameter" required>
-                  <option value="12">12 inches</option>
-                  <option value="14">14 inches</option>
-              </select>
-              
-              <button type="button" onclick="calculateDough()">Calculate</button>
-            </form>
-
-            <div id="results" style="display:none;">
-              <h2>Ingredient Amounts:</h2>
-              <p id="apFlour"></p>
-              <p id="ooFlour"></p>
-              <p id="water"></p>
-              <p id="salt"></p>
-              <p id="yeast"></p>
+          <h2>Pizza Dough Recipe:</h2>
+          <div class="newsletter-cta">
+            <div>
+              <form id="doughForm">
+                <fieldset>
+                  <legend>Personal Information</legend>
+                  <label for="numCrusts">Number of Crusts:</label>
+                  <input type="number" id="numCrusts" name="numCrusts" min="1" value="5" required>
+                  
+                  <label for="diameter">Diameter of Crusts (in inches):</label>
+                  <select id="diameter" name="diameter" required>
+                      <option value="12">12 inches</option>
+                      <option value="14">14 inches</option>
+                  </select>
+                  
+                </fieldset>
+                <input type="submit" value="Update Ingredient Quantities" onclick="updateIngredientQuantities(event)">
+              </form>
             </div>
             <div class="recipe">
-              <h2>Pizza Dough</h2>
+              <div id="results" style="display:none;">
+                <h2>Ingredient Amounts:</h2>
+                <p id="apFlour"></p>
+                <p id="ooFlour"></p>
+                <p id="water"></p>
+                <p id="salt"></p>
+                <p id="yeast"></p>
+              </div>
             </div>
+          </div>
+          <div>
+            <h2>Directions</h2>
+            <p>Sift the flours together into a bowl of a stand mixer.</p>
+            <p>Sprinkle in the salt and yeast.</p>
+            <p>Whisk everything together until homologous.</p>
+            <p>Add the water to the bowl. Start mixing it by hand using the dough hook. Once all 
+              of the water has been absorbed by the flour attach the bowl and hook to the 
+              mixer.</p>
+            <p>Kneed the dough for 7 minuets.</p>
+            <p>Remove the dough hook and transfer the dough to a lightly greased plastic 
+              tub with plenty of room for growth.</p>
+            <p>Optional: Let the dough rise for an hour or two at room temperature.</p>
+            <p>Place the tub in the fridge and let it rise for at least 12 hours. It can stay 
+              in the fridge for up to a week.</p>
           </div>
         </div>
 
