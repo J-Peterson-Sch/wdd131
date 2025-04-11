@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
     <script src="scripts/nav.js" defer></script>
   </head>
   <body>
@@ -22,24 +22,28 @@
         <ul class="navigation">
           <span> </span>
           <li><a href="index.html" title="Home">Home</a></li>
-          <li><a href="method.html" title="Method" class="active">Method</a></li>
           <li><a href="recipes.html" title="Recipes">Recipes</a></li>
+          <li><a href="method.html" title="Method" class="active">Method</a></li>
         </ul>
         </nav>
     </header>
         
     <main>
-        <div class="hero">
-          <h1>Making Homemade Pizza With a Gas Pizza Oven</h1>
-          <img src="images/pizza-going-into-woodfire-oven.jpg" alt="Rafting hero image">
-        </div>
+      <div class="hero">
+        <h1>Making Homemade Pizza With a Gas Pizza Oven</h1>
+        <picture>
+          <source srcset="images/pizza-going-into-woodfire-oven-desktop-extra-wide-optimized.webp" media="(min-width: 700px)">
+          <source srcset="images/pizza-going-into-woodfire-oven.jpg" media="(max-width: 699px)">
+          <img src="images/pizza-going-into-woodfire-oven.jpg" alt="Pizza going into a woodfire oven">
+        </picture>
+      </div>
 
     </main>
 
     <footer>
-        <p id="currentyear">&copy;<span> Jordan Peterson USA</span></p>
+        <p id="currentyear">&copy;<span>placeholder</span></p>
         <p id="lastModified">placeholder</p>
     </footer>
 
   </body>
-</html>
+</html>w

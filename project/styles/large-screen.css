@@ -1,3 +1,13 @@
+:root {
+    --main-color: #eae7dc;
+    --secondary-color: #d8c3a5;
+    --tertiary-color: #8e8d8a;
+    --tertiary-color-dark: #5c5b59;
+    --pinkish-color: #e98074;
+    --redish-color: #e85a4f;
+    --redish-color-contrast: #bc433b;
+}
+
 @media (min-width: 700px){
 
     /* navbar */
@@ -65,7 +75,7 @@
     .zig-zag-img {
         margin: 1rem 50px 1rem 50px;
         max-width: 350px;
-        align-self: center;
+        /* align-self: center; */
         /* min-width: 50px; */
       }
 
@@ -78,6 +88,20 @@
         display: flex;
         flex-direction: row;
     }
+
+    /* ************************newsletter CTA************************ */
+    .newsletter-cta {
+        flex-direction: row;
+    }
+  
+    .newsletter-cta p{
+        max-width: 400px;
+    }
+
+    .newsletter-text {
+        margin: 0;
+      }
+      
 
     /* ************************footer************************ */
     footer {

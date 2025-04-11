@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
     <script src="scripts/nav.js" defer></script>
   </head>
   <body>
@@ -21,8 +21,8 @@
         <img src="images/Pizza-logo.webp" alt="Pizza logo">
         <ul class="navigation">
             <li><a href="index.html" title="Home" class="active">Home</a></li>
-            <li><a href="method.html" title="Method">Method</a></li>
             <li><a href="recipes.html" title="Recipes">Recipes</a></li>
+            <li><a href="method.html" title="Method">Method</a></li>
           </ul>
         </nav>
     </header>
@@ -38,18 +38,21 @@
         </div>
 
         <div class="page-content">
-          <div>
-            <h2>What makes good pizza?</h2>
-            <p>Creating a delicious pizza at home is a rewarding culinary adventure, where high-quality ingredients
-               and careful technique come together to produce a memorable dish. Start with fresh, premium ingredients 
-               like ripe tomatoes for a sauce that strikes the right balance between acidity and sweetness, and choose 
-               a high-quality mozzarella for a rich, creamy melt. The dough is the cornerstone of your pizza—proper 
-               fermentation gives it a delightful airy texture with a crisp outer layer. When it comes to toppings, a 
-               thoughtful selection of fresh vegetables, flavorful herbs, and quality meats will enhance the overall 
-               flavor without overpowering the harmony of the pizza. Bake your masterpiece at high heat for a perfect 
-               crust and ideal cheese melt, achieving that authentic taste that transforms simple ingredients into 
-               something extraordinary. By paying attention to these details, you can create a pizza that’s not just 
-               good, but truly exceptional, right in your own kitchen.</p>
+
+          <div id="introduction">
+            <div>
+              <h2>What makes good pizza?</h2>
+              <p>Creating a delicious pizza at home is a rewarding culinary adventure, where high-quality ingredients
+                and careful technique come together to produce a memorable dish. Start with fresh, premium ingredients 
+                like ripe tomatoes for a sauce that strikes the right balance between acidity and sweetness, and choose 
+                a high-quality mozzarella for a rich, creamy melt. The dough is the cornerstone of your pizza—proper 
+                fermentation gives it a delightful airy texture with a crisp outer layer. When it comes to toppings, a 
+                thoughtful selection of fresh vegetables, flavorful herbs, and quality meats will enhance the overall 
+                flavor without overpowering the harmony of the pizza. Bake your masterpiece at high heat for a perfect 
+                crust and ideal cheese melt, achieving that authentic taste that transforms simple ingredients into 
+                something extraordinary. By paying attention to these details, you can create a pizza that’s not just 
+                good, but truly exceptional, right in your own kitchen.</p>
+            </div>
           </div>
 
           <div class="image-text-zig-zag">
@@ -72,11 +75,59 @@
                 rafters to seasoned thrill-seekers. Our expert guides ensure safety and fun on every trip.</p>
             </div>
           </div>
+
+          <div class="newsletter-cta">
+            <div class="newsletter-text">
+              <h2>Sign Up for My Newsletter</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officiis nulla doloremque. Eius ipsum
+                hic quia explicabo vel. Totam, odit aliquid. Iusto ipsa reiciendis assumenda ipsum debitis laudantium 
+                maiores similique!</p>
+            </div>
+                
+            <div>
+              <form action="thank-you.html" method="get">
+                <fieldset>
+                  <legend>Personal Information</legend>
+                  <label for="firstName">First Name<span class="required-text">*</span></label>
+                  <input type="text" id="firstName" name="firstName" required>
+          
+                  <label for="lastName">Last Name<span class="required-text">*</span></label>
+                  <input type="text" id="lastName" name="lastName" required>
+          
+                  <label for="email">Email Address<span class="required-text">*</span></label>
+                  <input type="email" id="email" name="email" required>
+                </fieldset>
+          
+                <fieldset class="topics-of-interest">
+                  <legend>Topics of Interest<span class="required-text">*</span></legend>
+      
+                  <input type="checkbox" id="recipes" name="topics" value="Recipes">
+                  <label for="recipes">Recipes</label>
+      
+                  <input type="checkbox" id="oven-tips" name="topics" value="Oven Tips">
+                  <label for="recipes">Oven Tips</label>
+      
+                  <input type="checkbox" id="dough-tips" name="topics" value="Dough Tips">
+                  <label for="recipes">Dough Tips</label>
+      
+                  <input type="checkbox" id="site-updates" name="topics" value="Site Updates">
+                  <label for="recipes">Site Updates</label>
+      
+                    
+                </fieldset>
+                <label for="comments">Additional Comments <span class="optional-text">(Optional)</span></label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+          
+                <input type="submit" value="Sign Up for My Newsletter"</button>
+              </form>            
+            </div>
+          </div>
         </div>
+        
     </main>
 
     <footer>
-        <p id="currentyear">&copy;<span> Jordan Peterson USA</span></p>
+        <p id="currentyear">&copy;<span>placeholder</span></p>
         <p id="lastModified">placeholder</p>
     </footer>
 

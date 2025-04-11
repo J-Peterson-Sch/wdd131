@@ -47,9 +47,14 @@ figcaption {
   font-weight: 600;
 }
 
-/* .page-content {
+.page-content {
   margin: 0 2rem;
-} */
+}
+
+#introduction {
+  max-width: 1200px;
+  margin: auto;
+}
 
 /* ************************zig-zag************************ */
 .image-text-zig-zag {
@@ -63,23 +68,127 @@ figcaption {
 
 .image-text-zig-zag p {
   margin: 0;
+  margin-bottom: 1.2rem;
   max-width: 600px;
   min-width: 50px;
 }
 
 .zig-zag-img {
   margin: 1rem 50px 1rem 50px;
-  max-width: 350px;
+  max-width: 100%;
+  height: auto;
+  display: block;
   align-self: center;
-  /* min-width: 50px; */
+  padding: .8rem;
 }
 
 .image-text-pair {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: .8rem;
+  margin-bottom: .8rem;
+  border-radius: .5rem;
+}
+
+/* ************************newsletter CTA************************ */
+.newsletter-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.newsletter-cta p{
+  max-width: 400px;
+}
+
+.newsletter-text {
+  margin: 0 auto;
 }
 
 
+/* ************************form************************ */
+
+form {
+  background-color: #d8c3a5;
+  color: #333;
+  max-width: 400px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+fieldset legend {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #939393;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+.topics-of-interest {
+  border: none;
+  /* margin-bottom: 15px; */
+  display: grid;
+  grid-template-columns:  1.25rem 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0;
+}
+
+input[type="submit"] {
+  background-color: var(--redish-color-contrast);
+  color: #fff;
+  border: darkgray solid 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.required-text {
+  color: rgb(184, 0, 0);
+  font-weight: normal;
+}
+
+.optional-text {
+  color: darkblue;
+  font-weight: normal;
+}
 
 /* ************************responsive nav************************ */
 nav {
@@ -103,13 +212,14 @@ nav img {
 	background: none;
 	color: #000;
  	position: absolute;
-	top: 1rem;
+	top: 1.5rem;
 	right: 1rem;
 }
 
 #menu::before {
 	content: "☰";
   color: var(--main-color);
+  font-size: 2.5rem;
 }
 
 #menu.open::before {
@@ -133,9 +243,10 @@ nav img {
 	color: #fff;
 }
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+	background-color: var(--redish-color);
+	color: var(--tertiary-color-dark);
 	font-weight: 700;
+  border-radius: 1rem;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -170,7 +281,7 @@ nav img {
 
 /* ************************footer************************ */
 footer {
-    background: var(--redish-color-contrast);
+    background-color: var(--redish-color-contrast);
     color: var(--main-color);
     padding: 1rem;
     text-align: center;
