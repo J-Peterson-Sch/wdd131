@@ -8,8 +8,20 @@ function calculateQuantities() {
     const numCrusts = parseInt(document.getElementById('numCrusts').value);
     const diameter = parseInt(document.getElementById('diameter').value);
     
-    // Dough weight for 12-inch and 14-inch crusts
-    const doughWeight = diameter === 12 ? 250 : 350;
+    let doughWeight;
+    if (diameter === 10) {
+        doughWeight = 175
+    }
+    else if (diameter === 12){
+        doughWeight = 250
+    }
+    else if (diameter === 14){
+        doughWeight = 350
+    }
+    else if (diameter === 16){
+        doughWeight = 350
+    }
+    
     
     // Calculate total dough needed
     const totalDough = numCrusts * doughWeight;
@@ -25,11 +37,11 @@ function calculateQuantities() {
     const yeast = 6 * ratio;
     
     // Display results
-    document.getElementById('apFlour').textContent = `All Purpose Flour: ${apFlour.toFixed(0)}g`;
-    document.getElementById('ooFlour').textContent = `OO Flour: ${ooFlour.toFixed(0)}g`;
-    document.getElementById('water').textContent = `Water: ${water.toFixed(0)}g`;
-    document.getElementById('salt').textContent = `Salt: ${salt.toFixed(1)}g`;
-    document.getElementById('yeast').textContent = `Instant Yeast: ${yeast.toFixed(1)}g`;
+    document.getElementById('apFlour').textContent = `${apFlour.toFixed(0)}g All Purpose Flour`;
+    document.getElementById('ooFlour').textContent = `${ooFlour.toFixed(0)}g OO Flour`;
+    document.getElementById('water').textContent = `${water.toFixed(0)}g Water`;
+    document.getElementById('salt').textContent = `${salt.toFixed(1)}g Salt`;
+    document.getElementById('yeast').textContent = `${yeast.toFixed(1)}g Instant Yeast`;
     
     document.getElementById('results').style.display = 'block';
 }

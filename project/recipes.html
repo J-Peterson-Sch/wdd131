@@ -31,18 +31,18 @@
         
     <main>
       <div class="hero">
-        <h1>Making Homemade Pizza With a Gas Pizza Oven</h1>
+        <h1>Making the Dough and Sauce</h1>
         <picture>
-          <source srcset="images/pizza-going-into-woodfire-oven-desktop-extra-wide-optimized.webp" media="(min-width: 700px)">
-          <source srcset="images/pizza-going-into-woodfire-oven.jpg" media="(max-width: 699px)">
+          <source srcset="images/pizza-dough-1920-optimized.webp" media="(min-width: 700px)">
+          <source srcset="images/pizza-dough-1920-optimized.webp" media="(max-width: 699px)">
           <img src="images/pizza-going-into-woodfire-oven.jpg" alt="Pizza going into a woodfire oven">
         </picture>
       </div>
 
       <div class="page-content">
-        <div class="recipe">
-          <h2>Pizza Dough</h2>
-          <div>
+        <div>          
+          <h2>Pizza Dough Recipe:</h2>
+          <div class="recipe-intro">
             <p>This dough recipe is my favorite. The inclusion of the OO flour helps prevent burning in the oven, 
               but the extra gluten from the all-purpose flour gives it extra stretch and chew. It calls for very 
               little yeast so you will need to let it rise at least overnight in the fridge. If you’re a fan of 
@@ -50,9 +50,7 @@
               richer flavor.
             </p>
           </div>
-
-          <h2>Pizza Dough Recipe:</h2>
-          <div class="newsletter-cta">
+          <div class="recipe-section">
             <div>
               <form id="doughForm">
                 <fieldset>
@@ -62,17 +60,19 @@
                   
                   <label for="diameter">Diameter of Crusts (in inches):</label>
                   <select id="diameter" name="diameter" required>
-                      <option value="12">12 inches</option>
-                      <option value="14">14 inches</option>
+                    <option value="10">10 inches</option>
+                    <option value="12" selected>12 inches</option>
+                    <option value="14">14 inches</option>
+                    <option value="16">16 inches</option>
                   </select>
                   
                 </fieldset>
                 <input type="submit" value="Update Ingredient Quantities" onclick="updateIngredientQuantities(event)">
               </form>
             </div>
-            <div class="recipe">
+            <div class="recipe-ingredients">
               <div id="results" style="display:none;">
-                <h2>Ingredient Amounts:</h2>
+                <h3 class="heading">Ingredient Amounts:</h3>
                 <p id="apFlour"></p>
                 <p id="ooFlour"></p>
                 <p id="water"></p>
@@ -80,21 +80,73 @@
                 <p id="yeast"></p>
               </div>
             </div>
+            <div class="recipe-directions">
+              <h3 class="heading">Directions</h3>
+              <div>
+                <p>Sift the flours together into a bowl of a stand mixer.</p>
+                <p>Sprinkle in the salt and yeast.</p>
+                <p>Whisk everything together until homologous.</p>
+                <p>Add the water to the bowl. Start mixing it by hand using the dough hook. Once all 
+                  of the water has been absorbed by the flour attach the bowl and hook to the 
+                  mixer.</p>
+                <p>Kneed the dough for 7 minuets.</p>
+                <p>Remove the dough hook and transfer the dough to a lightly greased plastic 
+                  tub with plenty of room for growth.</p>
+                <p>Optional: Let the dough rise for an hour or two at room temperature.</p>
+                <p>Place the tub in the fridge and let it rise for at least 12 hours. It can stay 
+                  in the fridge for up to a week.</p>
+                <p>Dividing and shaping are explained on the <a href="method.html">method</a> page.</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h2>Directions</h2>
-            <p>Sift the flours together into a bowl of a stand mixer.</p>
-            <p>Sprinkle in the salt and yeast.</p>
-            <p>Whisk everything together until homologous.</p>
-            <p>Add the water to the bowl. Start mixing it by hand using the dough hook. Once all 
-              of the water has been absorbed by the flour attach the bowl and hook to the 
-              mixer.</p>
-            <p>Kneed the dough for 7 minuets.</p>
-            <p>Remove the dough hook and transfer the dough to a lightly greased plastic 
-              tub with plenty of room for growth.</p>
-            <p>Optional: Let the dough rise for an hour or two at room temperature.</p>
-            <p>Place the tub in the fridge and let it rise for at least 12 hours. It can stay 
-              in the fridge for up to a week.</p>
+        </div>
+
+        <div>          
+          <h2>Pizza Sauce Recipe:</h2>
+          <div class="recipe-intro">
+            <p>This dough recipe is my favorite. The inclusion of the OO flour helps prevent burning in the oven, 
+              but the extra gluten from the all-purpose flour gives it extra stretch and chew. It calls for very 
+              little yeast so you will need to let it rise at least overnight in the fridge. If you’re a fan of 
+              sourdough crust however, you can leave it in the fridge for up to a week to allow it to develop a 
+              richer flavor.
+            </p>
+          </div>
+          <div class="recipe-section">
+            <figure class="recipe-image">
+              <img src="images/pizza-sauce-optimized.webp" loading="lazy" alt="Pizza sauce cooking in a pot">
+              <figcaption>Finished sauce</figcaption>
+            </figure>
+            <div class="recipe-ingredients">
+              <div>
+                <h3 class="heading">Ingredient Amounts:</h3>
+                <p>1 (28oz) can Whole San Marzano Tomatoes</p>
+                <p>2 Tbs. Olive Oil</p>
+                <p>1/4 C. Grated Onions (or finly minced)</p>
+                <p>1 tsp. Dried Oregano</p>
+                <p>2 tsp. Dried Basil</p>
+                <p>1/2 tsp. Red Pepper Flakes (optional)</p>
+                <p>3 Cloves Garlic, pressed</p>
+                <p>2 tsp. Sugar</p>
+                <p>1 tsp. Kosher salt</p>
+              </div>
+            </div>
+            <div class="recipe-directions">
+              <h3 class="heading">Directions</h3>
+              <div>
+                <p>Sift the flours together into a bowl of a stand mixer.</p>
+                <p>Sprinkle in the salt and yeast.</p>
+                <p>Whisk everything together until homologous.</p>
+                <p>Add the water to the bowl. Start mixing it by hand using the dough hook. Once all 
+                  of the water has been absorbed by the flour attach the bowl and hook to the 
+                  mixer.</p>
+                <p>Kneed the dough for 7 minuets.</p>
+                <p>Remove the dough hook and transfer the dough to a lightly greased plastic 
+                  tub with plenty of room for growth.</p>
+                <p>Optional: Let the dough rise for an hour or two at room temperature.</p>
+                <p>Place the tub in the fridge and let it rise for at least 12 hours. It can stay 
+                  in the fridge for up to a week.</p>
+              </div>
+            </div>
           </div>
         </div>
 
