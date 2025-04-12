@@ -134,6 +134,28 @@ figcaption {
   padding: 2.5rem;
 }
 
+/* ************************method-setion************************ */
+
+.method-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.method-section h2 {
+  margin: 0 0 2rem 0;
+}
+
+.method-section ol {
+  max-width: 600px;
+}
+
+.method-image {
+  width: 100%;
+}
+
 /* ************************newsletter CTA************************ */
 .newsletter-cta {
   display: flex;
