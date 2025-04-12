@@ -17,11 +17,10 @@
   </head>
   <body>
     <header>
-      <button id="menu"></button>
+      <button id="menu" aria-label="menu"></button>
       <nav>
         <img src="images/Pizza-logo.webp" alt="Pizza logo">
         <ul class="navigation">
-          <span> </span>
           <li><a href="index.html" title="Home">Home</a></li>
           <li><a href="recipes.html" title="Recipes" class="active">Recipes</a></li>
           <li><a href="method.html" title="Method">Method</a></li>
@@ -58,12 +57,10 @@
                   <label for="numCrusts">Number of Crusts:</label>
                   <input type="number" id="numCrusts" name="numCrusts" min="1" value="5" required>
                   
-                  <label for="diameter">Diameter of Crusts (in inches):</label>
-                  <select id="diameter" name="diameter" required>
-                    <option value="10">10 inches</option>
-                    <option value="12" selected>12 inches</option>
-                    <option value="14">14 inches</option>
-                    <option value="16">16 inches</option>
+                  <label for="crust-diameter">Diameter of Crusts (in inches):</label>
+                  <select id="crust-diameter" name="crust-diameter" required>
+                    <option value="" label="error-loading"></option>
+                    <!-- Generated with JS -->
                   </select>
                   
                 </fieldset>
