@@ -32,6 +32,11 @@ h2 {
   margin-top: 5rem;
 }
 
+ul,
+ol {
+  margin-left: 2rem;
+}
+
 p,
 li {
   font-family: "Zain", sans-serif;
@@ -332,6 +337,7 @@ nav img {
 footer {
   background-color: var(--redish-color-contrast);
   color: var(--main-color);
+  margin-top: 2rem;
   padding: 1rem;
   text-align: center;
   display: flex;
